@@ -1,10 +1,17 @@
 config MMI_INFO
         tristate "MMI INFO"
         default n
+<<<<<<< HEAD
 	depends on MMI_ANNOTATE
+=======
+>>>>>>> lineage/lineage-23.2
         help
          Say Y here if you have a mmi info compatible
          device connected.
 
          This driver can also be built as a module.  If so, the module
+<<<<<<< HEAD
          will be called mmi_info.
+=======
+         will be called mmi_info.
+>>>>>>> lineage/lineage-23.2

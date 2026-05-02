@@ -621,7 +621,15 @@ static void usb_ether_setup(struct net_device *dev)
 
 	ether_setup(dev);
 
+<<<<<<< HEAD
 	random_ether_addr(dev->dev_addr);
+=======
+#if LINUX_VERSION_CODE < KERNEL_VERSION(6, 1, 25)
+	eth_random_addr((u8 *)dev->dev_addr);
+#else
+	eth_hw_addr_random(dev);
+#endif
+>>>>>>> lineage/lineage-23.2
 }
 
 /*-------------------------------------------------------------------------*/
@@ -1001,6 +1009,12 @@ static void usbnet_disable(struct usb_function *f)
 	struct usbnet_device  *dev = usbnet_func_to_dev(f);
 	struct usbnet_context *context = dev->net_ctxt;
 	USBNETDBG(context, "%s\n", __func__);
+<<<<<<< HEAD
+=======
+#ifdef CONFIG_MOT_USB_DEBUG_LOG
+	dump_stack();
+#endif
+>>>>>>> lineage/lineage-23.2
 	do_set_config(f, 0);
 }
 

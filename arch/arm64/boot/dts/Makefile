@@ -1,8 +1,15 @@
 # SPDX-License-Identifier: GPL-2.0
 dtstree	:= $(srctree)/$(src)
+<<<<<<< HEAD
 
 vendor  := $(dtstree)/vendor
 ifeq "$(wildcard $(vendor)/Makefile)" ""
+=======
+vendor  := $(dtstree)/vendor
+ifneq "$(wildcard $(vendor)/Makefile)" ""
+    subdir-y += vendor
+else
+>>>>>>> lineage/lineage-23.2
 subdir-y += actions
 subdir-y += al
 subdir-y += allwinner
@@ -32,7 +39,10 @@ subdir-y += synaptics
 subdir-y += ti
 subdir-y += xilinx
 subdir-y += zte
+<<<<<<< HEAD
 
 else
     subdir-y += vendor
+=======
+>>>>>>> lineage/lineage-23.2
 endif

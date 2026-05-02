@@ -472,7 +472,11 @@ qcom,mdss-dsi-display-timings {
 		qcom,mdss-dsc-version = <0x11>;
 		qcom,mdss-dsc-slice-height = <12>;
 		qcom,mdss-dsc-slice-width = <1080>;
+<<<<<<< HEAD
 		qcom,mdss-dsc-slice-per-pkt = <2>;
+=======
+		qcom,mdss-dsc-slice-per-pkt = <1>;
+>>>>>>> lineage/lineage-23.2
 		qcom,mdss-dsc-bit-per-component = <10>;
 		qcom,mdss-dsc-bit-per-pixel = <8>;
 		qcom,mdss-dsc-block-prediction-enable;
@@ -614,7 +618,11 @@ qcom,mdss-dsi-display-timings {
 		qcom,mdss-dsc-version = <0x11>;
 		qcom,mdss-dsc-slice-height = <12>;
 		qcom,mdss-dsc-slice-width = <1080>;
+<<<<<<< HEAD
 		qcom,mdss-dsc-slice-per-pkt = <2>;
+=======
+		qcom,mdss-dsc-slice-per-pkt = <1>;
+>>>>>>> lineage/lineage-23.2
 		qcom,mdss-dsc-bit-per-component = <10>;
 		qcom,mdss-dsc-bit-per-pixel = <8>;
 		qcom,mdss-dsc-block-prediction-enable;
@@ -756,7 +764,11 @@ qcom,mdss-dsi-display-timings {
 		qcom,mdss-dsc-version = <0x11>;
 		qcom,mdss-dsc-slice-height = <12>;
 		qcom,mdss-dsc-slice-width = <1080>;
+<<<<<<< HEAD
 		qcom,mdss-dsc-slice-per-pkt = <2>;
+=======
+		qcom,mdss-dsc-slice-per-pkt = <1>;
+>>>>>>> lineage/lineage-23.2
 		qcom,mdss-dsc-bit-per-component = <10>;
 		qcom,mdss-dsc-bit-per-pixel = <8>;
 		qcom,mdss-dsc-block-prediction-enable;
@@ -898,7 +910,11 @@ qcom,mdss-dsi-display-timings {
 		qcom,mdss-dsc-version = <0x11>;
 		qcom,mdss-dsc-slice-height = <12>;
 		qcom,mdss-dsc-slice-width = <1080>;
+<<<<<<< HEAD
 		qcom,mdss-dsc-slice-per-pkt = <2>;
+=======
+		qcom,mdss-dsc-slice-per-pkt = <1>;
+>>>>>>> lineage/lineage-23.2
 		qcom,mdss-dsc-bit-per-component = <10>;
 		qcom,mdss-dsc-bit-per-pixel = <8>;
 		qcom,mdss-dsc-block-prediction-enable;
@@ -932,8 +948,13 @@ qcom,mdss-dsi-display-timings {
 			39 00 00 00 00 00 13 E6 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 			39 00 00 00 00 00 13 E7 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 			//FFD SPR Pixel Type Setting
+<<<<<<< HEAD
 			15 00 00 00 00 00 02 6F 04
 			15 00 00 00 00 00 02 C1 00
+=======
+			//15 00 00 00 00 00 02 6F 04
+			//15 00 00 00 00 00 02 C1 00
+>>>>>>> lineage/lineage-23.2
 			//FFD RAM Setting, RAMOFF_IDLE_DMR
 			39 00 00 00 00 00 06 F0 55 AA 52 08 00
 			39 00 00 00 00 00 04 C0 0E B3 21
@@ -1006,8 +1027,13 @@ qcom,mdss-dsi-display-timings {
 			39 00 00 00 00 00 13 E6 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 			39 00 00 00 00 00 13 E7 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 			//FFD SPR Pixel Type Setting
+<<<<<<< HEAD
 			15 00 00 00 00 00 02 6F 04
 			15 00 00 00 00 00 02 C1 00
+=======
+			//15 00 00 00 00 00 02 6F 04
+			//15 00 00 00 00 00 02 C1 00
+>>>>>>> lineage/lineage-23.2
 			//FFD RAM Setting, RAMOFF_IDLE_DMR
 			39 00 00 00 00 00 06 F0 55 AA 52 08 00
 			39 00 00 00 00 00 04 C0 0E B3 21
@@ -1040,7 +1066,11 @@ qcom,mdss-dsi-display-timings {
 		qcom,mdss-dsc-version = <0x11>;
 		qcom,mdss-dsc-slice-height = <12>;
 		qcom,mdss-dsc-slice-width = <1080>;
+<<<<<<< HEAD
 		qcom,mdss-dsc-slice-per-pkt = <2>;
+=======
+		qcom,mdss-dsc-slice-per-pkt = <1>;
+>>>>>>> lineage/lineage-23.2
 		qcom,mdss-dsc-bit-per-component = <10>;
 		qcom,mdss-dsc-bit-per-pixel = <8>;
 		qcom,mdss-dsc-block-prediction-enable;

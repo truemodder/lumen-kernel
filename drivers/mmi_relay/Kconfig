@@ -2,8 +2,15 @@ config MMI_RELAY
         tristate "MMI RELAY"
         default n
         help
+<<<<<<< HEAD
          Say Y here if you have a mmi relay compatible
          device connected.
 
          This driver can also be built as a module.  If so, the module
          will be called mmi_relay.
+=======
+         Say Y here if you have a MMI Relay
+
+         This driver can also be built as a module.  If so, the module
+         will be called mmi_relay.
+>>>>>>> lineage/lineage-23.2

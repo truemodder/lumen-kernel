@@ -58,7 +58,11 @@
 		"openmx",	/* 41 */
 		"altmx",	/* 42 */
 		"openpe",	/* 43 */
+<<<<<<< HEAD
 		"undefined",	/* 44 */
+=======
+		"openpub",	/* 44 */
+>>>>>>> lineage/lineage-23.2
 		"undefined",	/* 45 */
 		"undefined",	/* 46 */
 		"undefined",	/* 47 */
@@ -231,12 +235,21 @@
 		"retkr",	/* 214 */
 		"retjio",	/* 215 */
 		"ymobile",	/* 216 */
+<<<<<<< HEAD
 		"undefined",	/* 217 */
 		"undefined",	/* 218 */
 		"undefined",	/* 219 */
 		"undefined",	/* 220 */
 		"undefined",	/* 221 */
 		"undefined",	/* 222 */
+=======
+		"lguplus",	/* 217 */
+		"docomo",	/* 218 */
+		"retanz",	/* 219 */
+		"cbncn",	/* 220 */
+		"kddi",		/* 221 */
+		"rakuten",	/* 222 */
+>>>>>>> lineage/lineage-23.2
 		"undefined",	/* 223 */
 		"undefined",	/* 224 */
 		"undefined",	/* 225 */

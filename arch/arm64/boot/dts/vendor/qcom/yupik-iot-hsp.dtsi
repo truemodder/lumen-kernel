@@ -21,6 +21,14 @@
 	qcom,edp-backlight-en-gpio = <&pm8350c_gpios 7 0>;
 	qcom,edp-default-panel = <&edp_panel_1080p_video>;
 	qcom,panel-notifier-support;
+<<<<<<< HEAD
+=======
+	qcom,edp-bl-min-level = <1>;
+	qcom,edp-bl-max-level = <4095>;
+	qcom,edp-brightness-max-level = <255>;
+	qcom,bl-pmic-pwm-period-usecs = <100>;
+	pwms = <&pm8350c_pwm_2 0 65535>;
+>>>>>>> lineage/lineage-23.2
 };
 
 &mdss_mdp {
@@ -46,6 +54,7 @@
 };
 
 &pm8350c_gpios {
+<<<<<<< HEAD
 	pmic_edp_bl_en: pmic-edp-bl-en-state {
 		pins = "gpio7";
 		function = "normal";
@@ -55,6 +64,8 @@
 		output-low;
 	};
 
+=======
+>>>>>>> lineage/lineage-23.2
 	pmic_edp_bl_pwm: pmic-edp-bl-pwm-state {
 		pins = "gpio8";
 		function = "func1";
@@ -69,6 +80,7 @@
 	status = "ok";
 };
 
+<<<<<<< HEAD
 &soc {
 	edp_panel_bl_reg: edp_panel_bl_reg {
 		compatible = "qcom,stub-regulator";
@@ -87,6 +99,8 @@
 	};
 };
 
+=======
+>>>>>>> lineage/lineage-23.2
 &pcie0 {
 	status = "ok";
 };

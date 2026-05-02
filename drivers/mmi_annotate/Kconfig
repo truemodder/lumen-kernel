@@ -6,4 +6,8 @@ config MMI_ANNOTATE
          device connected.
 
          This driver can also be built as a module.  If so, the module
+<<<<<<< HEAD
          will be called mmi_annotate.
+=======
+         will be called mmi_annotate.
+>>>>>>> lineage/lineage-23.2

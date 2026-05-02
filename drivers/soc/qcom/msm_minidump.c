@@ -519,7 +519,11 @@ static int msm_minidump_add_header(void)
 
 	/* 4th section is linux banner */
 	banner = (char *)ehdr + strtbl_off + MAX_STRTBL_SIZE;
+<<<<<<< HEAD
 	strlcpy(banner, linux_banner, linux_banner_len + 1);
+=======
+	strlcpy(banner, linux_banner, MAX_STRTBL_SIZE);
+>>>>>>> lineage/lineage-23.2
 
 	shdr->sh_type = SHT_PROGBITS;
 	shdr->sh_offset = (elf_addr_t)(strtbl_off + MAX_STRTBL_SIZE);
