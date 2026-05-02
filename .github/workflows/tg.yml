@@ -1,0 +1,55 @@
+name: Upload Release to Telegram
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+jobs:
+  telegram:
+    runs-on: ubuntu-22.04
+
+    steps:
+    - name: Checkout (not required, but safe)
+      uses: actions/checkout@v4
+
+    - name: Get latest release asset
+      uses: robinraju/release-downloader@v1.10
+      with:
+        latest: true
+        fileName: "*.zip"
+
+    - name: Get last commit description only
+      run: |
+        COMMIT_DESC=$(git log -1 --pretty=%B | sed '1{/^$/d;};1d')
+        
+        if [ -z "$COMMIT_DESC" ]; then
+        COMMIT_DESC="No detailed changelog provided."
+        fi
+        echo "CHANGELOG<<EOF" >> $GITHUB_ENV
+        echo "$COMMIT_DESC" >> $GITHUB_ENV
+        echo "EOF" >> $GITHUB_ENV
+
+    - name: Debug downloaded files
+      run: |
+        echo "Workspace:"
+        pwd
+        ls -lh
+
+    - name: Upload to Telegram
+      run: |
+       FILE=$(ls *.zip | head -n 1)
+       echo "Uploading $FILE to Telegram"
+
+       curl -X POST "https://api.telegram.org/bot${{ secrets.TG_BOT_TOKEN }}/sendDocument" \
+       -F chat_id="${{ secrets.TG_CHAT_ID }}" \
+       -F document=@"$FILE" \
+       -F parse_mode=HTML \
+       -F caption="🔥 <b>HuP Kernel</b>
+       📦 <b>Build:</b> $(date +"%d/%m/%Y %H:%M")
+       📲 <b>Root:</b> KernelSU (rsuntk)
+       🛠 <b>Clang:</b> AOSP r18
+
+       📝 <b>Changelog</b>
+       <pre>${{ env.CHANGELOG }}</pre>"
+

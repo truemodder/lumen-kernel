@@ -144,7 +144,7 @@ static bool __dead_end_function(struct objtool_file *file, struct symbol *func,
 		"fortify_panic",
 		"usercopy_abort",
 		"machine_real_restart",
-		"rewind_stack_and_make_dead",
+		"rewind_stack_and_make_dead"
 		"cpu_bringup_and_idle",
 	};
 
@@ -163,7 +163,7 @@ static bool __dead_end_function(struct objtool_file *file, struct symbol *func,
 		return false;
 
 	insn = find_insn(file, func->sec, func->offset);
-	if (!insn || !insn->func)
+	if (!insn->func)
 		return false;
 
 	func_for_each_insn_all(file, func, insn) {

@@ -151,6 +151,11 @@ config PM_WAKELOCKS_GC
 	depends on PM_WAKELOCKS
 	default y
 
+config	BOEFFLA_WL_BLOCKER
+	bool "Boeffla generic wakelock blocker driver"
+	depends on PM
+	default y
+
 config PM
 	bool "Device power management core functionality"
 	---help---

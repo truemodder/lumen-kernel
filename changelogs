@@ -1,0 +1,16 @@
+23/01/2026 10am
+• Add bbr plus and wl blocker
+• General improvements to Wi-Fi 
+• Force GPU idle timeout to 58 ms
+• Disable per-process reclaim
+• Add support for erofs ROMs 
+• Enable CONFIG_FAIR_GROUP_SCHED
+
+23/01/2026 12pm
+• Set uname to 5.10 for A16-QPR2
+
+23/01/2026 3pm
+• BFP 5.10 BACKPORT for A16-QPR2
+• Syscall UPSTREAM for A16-QPR2
+• FS corrections for A16-QPR2
+• Change the version ID to date

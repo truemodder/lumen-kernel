@@ -221,7 +221,7 @@ int die(const char *str, struct pt_regs *regs, long err)
 		panic("Fatal exception");
 
 	oops_exit();
-	make_task_dead(err);
+	make_dead_task(err);
 	return 0;
 }
 

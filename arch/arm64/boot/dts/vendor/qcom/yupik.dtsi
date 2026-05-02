@@ -35,7 +35,7 @@
 	#size-cells = <2>;
 
 	chosen {
-		bootargs = "log_buf_len=256K earlycon=msm_geni_serial,0x994000 rcupdate.rcu_expedited=1 rcu_nocbs=0-7 kpti=off";
+		bootargs = "log_buf_len=256K earlycon=msm_geni_serial,0x994000 rcupdate.rcu_expedited=1 rcu_nocbs=0-7 kpti=off noirqdebug quiet";
 	};
 
 	memory { device_type = "memory"; reg = <0 0 0 0>; };
@@ -3479,7 +3479,7 @@
 			qcom,target-dev = <&cpu4_cpu_llcc_latfloor>;
 			qcom,cpulist = <&CPU4 &CPU5 &CPU6 &CPU7>;
 			qcom,core-dev-table =
-				< 1900800 MHZ_TO_MBPS( 150, 16) >,
+				< 1900800 MHZ_TO_MBPS( 300, 16) >,
 				< 2707200 MHZ_TO_MBPS( 600, 16) >;
 		};
 
